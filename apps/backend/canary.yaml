@@ -57,7 +57,7 @@ spec:
         url: http://flagger-loadtester.prod/
         metadata:
           type: bash
-          cmd: "curl -sd 'test' http://backend-canary.prod:9898/tok | grep token"
+          cmd: "curl -sd 'test' http://backend-canary.prod:9898/token | grep token"
       - name: load-test
         type: rollout
         timeout: 15s
